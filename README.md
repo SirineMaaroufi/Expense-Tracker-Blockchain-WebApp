@@ -12,7 +12,6 @@ This repository contains a blockchain-based expense tracker web application. It 
 - [Application Workflow](#application-workflow)
 - [Smart Contract Details](#smart-contract-details)
 - [Screenshots](#screenshots)
-- [Future Enhancements](#future-enhancements)
 
 ---
 
@@ -107,13 +106,13 @@ This repository contains a blockchain-based expense tracker web application. It 
 ## Screenshots
 
 ### 1. Login Page
-![Login Page](images\login)
+![Login Page](images/login.png)
 
-### 2. Expense Logging
-![Expense Logging](images\expense_logging)
+### 2. Home Page
+![Expense Logging](images/home.png)
 
-### 3. Expense Dashboard
-![Dashboard](images\expense_view)
+### 3. Logging Expense
+![Dashboard](images/expense_logging.png)
 
 ---
 
