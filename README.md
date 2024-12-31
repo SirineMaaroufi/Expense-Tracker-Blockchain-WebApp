@@ -55,7 +55,7 @@ This repository contains a blockchain-based expense tracker web application. It 
 ### Steps
 1. Clone the repository:
    ```bash
-   git clone https://github.com/yourusername/blockchain-expense-tracker.git
+   git clone https://github.com/SirineMaaroufi/Expense-Tracker-Blockchain-WebApp.git
    cd blockchain-expense-tracker
    ```
 
@@ -73,6 +73,7 @@ This repository contains a blockchain-based expense tracker web application. It 
 
 5. Update the contract details in `app.py`:
    - Replace `contract_address` with your deployed contract's address.
+   - Replace `ABI.json` with your deployed contract's ABI.
    - Replace the private key with one from your Ganache accounts.
 
 6. Start the Flask application:
@@ -106,22 +107,13 @@ This repository contains a blockchain-based expense tracker web application. It 
 ## Screenshots
 
 ### 1. Login Page
-![Login Page](path-to-login-screenshot)
+![Login Page](images\login)
 
 ### 2. Expense Logging
-![Expense Logging](path-to-log-expense-screenshot)
+![Expense Logging](images\expense_logging)
 
 ### 3. Expense Dashboard
-![Dashboard](path-to-dashboard-screenshot)
-
----
-
-## Future Enhancements
-
-- Implement user-specific accounts using blockchain wallet addresses.
-- Add filtering and sorting features for expenses.
-- Deploy the smart contract to a live Ethereum network.
-- Create a Docker setup for easier deployment.
+![Dashboard](images\expense_view)
 
 ---
 
@@ -129,8 +121,3 @@ This repository contains a blockchain-based expense tracker web application. It 
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
----
-
-## Contribution
-
-Contributions are welcome! Please fork this repository and submit a pull request for review.
