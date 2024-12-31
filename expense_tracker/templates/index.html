@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f7f7f7;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            color: #333;
+        }
+        .container {
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            width: 90%;
+            max-width: 600px;
+            padding: 20px;
+            text-align: center;
+        }
+        h2 {
+            color: #2d3e50;
+            font-size: 2.5em;
+            margin-bottom: 20px;
+        }
+        .balance-info {
+            background-color: #e0f7fa;
+            border-radius: 8px;
+            padding: 15px;
+            margin-bottom: 30px;
+        }
+        .balance-info p {
+            font-size: 1.2em;
+            margin: 5px 0;
+        }
+        .balance-info .eth-balance {
+            font-size: 1.5em;
+            color: #00796b;
+        }
+        .links {
+            margin-top: 30px;
+        }
+        .links a {
+            font-size: 1.2em;
+            margin: 0 15px;
+            text-decoration: none;
+            color: #00796b;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+        .links a:hover {
+            color: #004d40;
+        }
+        .logout-button {
+            background-color: #ff7043;
+            color: white;
+            padding: 10px 20px;
+            font-size: 1.2em;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        .logout-button:hover {
+            background-color: #e64a19;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Welcome to Your Expense Tracker</h2>
+        
+        {% if balance %}
+            <div class="balance-info">
+                <p><strong>Account Address:</strong> {{ account }}</p>
+                <p class="eth-balance"><strong>Available Balance:</strong> {{ balance }} ETH</p>
+            </div>
+        {% else %}
+            <p>Please log in to view your balance.</p>
+        {% endif %}
+        
+        <div class="links">
+            <a href="{{ url_for('log_expense') }}">Log Expense</a>
+            <a href="{{ url_for('view_expenses') }}">View Expenses</a>
+        </div>
+        
+        <form action="{{ url_for('logout') }}" method="POST">
+            <button type="submit" class="logout-button">Logout</button>
+        </form>
+    </div>
+</body>
+</html>

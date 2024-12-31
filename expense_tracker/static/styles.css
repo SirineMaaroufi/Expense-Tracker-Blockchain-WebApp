@@ -1,0 +1,222 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4; /* Light grey background */
+    margin: 0;
+    padding: 20px;
+}
+
+/* Container for the main content */
+.container {
+    max-width: 800px; /* Limit the width */
+    margin: 0 auto; /* Center the container */
+    padding: 20px; /* Add padding */
+    background-color: rgb(255, 255, 255); /* White background for contrast */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(152, 209, 228, 0.844); /* Subtle shadow */
+}
+
+h1 {
+    color: #333; /* Darker text color */
+    text-align: center; /* Center the text */
+    font-size: 3em; /* Adjust the size as needed */
+}
+
+h2 {
+    color: #131066; /* Darker text color for h2 */
+    text-align: center; /* Center the text */
+}
+
+
+.dashboard {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.card {
+    background: #f9f9f9; /* Light background for cards */
+    border: 1px solid #ddd; /* Light border */
+    border-radius: 8px;
+    margin: 10px;
+    padding: 20px;
+    flex: 1 1 calc(30% - 20px); /* Adjust width to three cards per row */
+    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1); /* Light shadow for cards */
+}
+
+.card h2 {
+    margin-top: 0;
+    font-size: 1.5em;
+    color: #555;
+}
+
+.card table {
+    width: 100%;
+    margin: 10px 0;
+    border-collapse: collapse;
+}
+
+.card th, .card td {
+    text-align: left;
+    padding: 10px;
+    border: 1px solid #ddd;
+}
+
+.card th {
+    background-color: #f2f2f2; /* Light grey for table headers */
+}
+
+.total {
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.overall-total {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 1.5em;
+    color: #333;
+}
+
+a {
+    display: block;
+    text-align: center;
+    margin-top: 20px;
+    color: #5299ef;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline; /* Underline on hover */
+}
+
+/* Style the form inputs */
+input[type="text"],
+input[type="number"],
+input[type="submit"] {
+    width: 100%; /* Full width */
+    padding: 10px; /* Padding inside inputs */
+    margin: 10px 0; /* Space between inputs */
+    border: 1px solid #ccc; /* Border color */
+    border-radius: 4px; /* Rounded corners */
+}
+
+/* Style the submit button */
+input[type="submit"] {
+    background-color: #28a745; /* Green background */
+    color: white; /* White text */
+    border: none; /* No border */
+    cursor: pointer; /* Pointer cursor on hover */
+}
+
+/* Change button color on hover */
+input[type="submit"]:hover {
+    background-color: #218838; /* Darker green */
+}
+
+/* Style the expense list */
+.expense-list {
+    list-style-type: none; /* Remove bullet points */
+    padding: 0; /* Remove padding */
+}
+
+.expense-list li {
+    background-color: #f9f9f9; /* Light background for each expense */
+    padding: 10px; /* Padding inside each expense */
+    margin: 5px 0; /* Space between expenses */
+    border: 1px solid #ddd; /* Light border */
+    border-radius: 4px; /* Rounded corners */
+}
+
+/* Table styling */
+table {
+    width: 100%; /* Full width */
+    border-collapse: collapse; /* Merge borders */
+    margin-top: 20px; /* Space above table */
+}
+
+th, td {
+    border: 1px solid #ddd; /* Light border */
+    padding: 10px; /* Padding inside cells */
+    text-align: left; /* Left-align text */
+}
+
+th {
+    background-color: #f2f2f2; /* Light grey for header */
+}
+
+tr:nth-child(even) {
+    background-color: #f9f9f9; /* Zebra striping */
+}
+
+tr:hover {
+    background-color: #f1f1f1; /* Highlight on hover */
+}
+
+header {
+    background: #f9f9f9; /* Dark header background */
+    padding: 10px 0;
+}
+
+nav {
+    display: flex;
+    justify-content: center; /* Center the navigation items */
+}
+
+.nav-links {
+    list-style: none; /* Remove bullet points */
+    padding: 0; /* Remove padding */
+    display: flex; /* Use flexbox for horizontal alignment */
+    gap: 20px; /* Space between items */
+}
+
+.nav-links li {
+    margin: 0; /* Remove margin */
+}
+
+.nav-links a {
+    color: #fff; /* Link color */
+    text-decoration: none; /* Remove underline */
+    padding: 8px 16px; /* Add padding for better touch area */
+}
+
+.nav-links a:hover {
+    background: #555; /* Background color on hover */
+    border-radius: 4px; /* Rounded corners */
+}
+
+nav ul {
+    list-style-type: none; /* Remove default list bullets */
+    padding: 0; /* Remove default padding */
+    margin: 0; /* Remove default margin */
+    display: flex; /* Use flexbox to arrange items in a row */
+}
+
+nav ul li {
+    margin-right: 20px; /* Add space between the links */
+}
+
+nav ul a {
+    margin-right: 20px; /* Add space between the links */
+    text-decoration: none; /* Remove underline from links */
+    color: #333; /* Text color */
+}
+
+/* Optional: Add hover effect */
+nav ul a:hover {
+    color: #007BFF; /* Change color on hover */
+}
+
+.button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #4CAF50; /* Green background */
+    color: white; /* White text */
+    text-align: center;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 20px;
+}
+
+.button:hover {
+    background-color: #45a049; /* Darker green on hover */
+}
