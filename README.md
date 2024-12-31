@@ -55,7 +55,7 @@ This repository contains a blockchain-based expense tracker web application. It 
 1. Clone the repository:
    ```bash
    git clone https://github.com/SirineMaaroufi/Expense-Tracker-Blockchain-WebApp.git
-   cd blockchain-expense-tracker
+   cd expense-tracker
    ```
 
 2. Install Python dependencies:
